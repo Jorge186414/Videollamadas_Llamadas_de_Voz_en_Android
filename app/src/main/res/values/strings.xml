@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">Videollamadas_y_Llamadas_de_Vox</string>
+    <string name="app_name">Fast Call</string>
     <string name="userId">Crear Nuevo Usuario</string>
     <string name="btnLogIn">Iniciar Sesion</string>
+
+    <string name="tvUserNameID">Bienvenido, A Quien desear contactar?</string>
+    <string name="etUserNameID">ID del Usuario a contactar</string>
 </resources>
