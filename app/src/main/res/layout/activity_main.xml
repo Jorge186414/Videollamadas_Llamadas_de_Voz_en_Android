@@ -57,7 +57,7 @@
 
             <!--Boton para Videollamadas-->
             <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
-                android:id="@+id/VideoLlamada"
+                android:id="@+id/btnVideoLlamada"
                 android:layout_width="70dp"
                 android:layout_height="70dp" />
 

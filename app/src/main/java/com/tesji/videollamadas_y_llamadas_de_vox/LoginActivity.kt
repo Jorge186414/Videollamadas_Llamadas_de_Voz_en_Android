@@ -3,6 +3,7 @@ package com.tesji.videollamadas_y_llamadas_de_vox
 import android.app.Application
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.tesji.videollamadas_y_llamadas_de_vox.databinding.ActivityLoginBinding
 import com.zegocloud.uikit.prebuilt.call.ZegoUIKitPrebuiltCallService
@@ -18,7 +19,15 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener{
-            startActivity(Intent(applicationContext, MainActivity::class.java))
+            val userId = binding.userId.text.toString()
+            if(userId.isNotEmpty()){
+                val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                intent.putExtra("userID", userId)
+                startActivity(intent)
+                setUpZegoUiKit(userId)
+            }else{
+                Toast.makeText(application, "Por Favor ingresa un nombre de usuario", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
