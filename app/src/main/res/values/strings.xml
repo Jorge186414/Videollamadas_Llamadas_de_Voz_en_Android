@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Videollamadas_y_Llamadas_de_Vox</string>
+    <string name="userId">Crear Nuevo Usuario</string>
+    <string name="btnLogIn">Iniciar Sesion</string>
 </resources>
